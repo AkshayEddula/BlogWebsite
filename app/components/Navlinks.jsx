@@ -47,7 +47,7 @@ const Navlinks = ({ categories }) => {
           Categories
         </Link>
         <Link href="/about">About</Link>
-        <Link href="/">Newsletter</Link>
+        <Link href="/Newsletter">Newsletter</Link>
         <div className="mode_toggle">
           <FiSun className="icons" />
           <HiOutlineMoon className="icons" />
@@ -64,7 +64,7 @@ const Navlinks = ({ categories }) => {
             Categories
           </Link>
           <Link href="/about">About</Link>
-          <Link href="/">Newsletter</Link>
+          <Link href="/Newsletter">Newsletter</Link>
           <div className="mode_toggle">
             <FiSun className="icons" />
             <HiOutlineMoon className="icons" />
@@ -83,7 +83,11 @@ const Navlinks = ({ categories }) => {
           className="categories"
         >
           {categories.map((category) => (
-            <Link key={category.id} href={"/categories/" + category.slug}>
+            <Link
+              className="cat-link"
+              key={category.id}
+              href={"/categories/" + category.slug}
+            >
               {category.name}
             </Link>
           ))}

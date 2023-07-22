@@ -1,6 +1,6 @@
 import React from "react";
 
-const About = () => {
+const page = () => {
   return (
     <h1 className=" text-xl font-semibold m-24 text-[#ffffff]">
       Will Be Updated Soon
@@ -8,4 +8,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default page;

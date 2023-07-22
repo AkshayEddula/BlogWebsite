@@ -21,9 +21,12 @@ export default async function page({ params }) {
         <hr />
       </div>
       <h1>posts</h1>
-      {catPost.map((post) => (
-        <PostTemplate post={post} />
-      ))}
+      {catPost.length === 0 && <h1>No Posts In This Category Yet</h1>}
+      <div className="cat-posts">
+        {catPost.map((post) => (
+          <PostTemplate post={post} />
+        ))}
+      </div>
     </div>
   );
 }
