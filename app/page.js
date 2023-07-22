@@ -3,7 +3,6 @@ import Posts from "@app/components/posts";
 import RecentPosts from "./components/Recent Posts";
 import Featuredblog from "./components/Featuredblog";
 import Prenex from "./components/prenex";
-import { getBlogPost } from "./services/blogpost";
 
 export default async function Home({ result }) {
   const graphqlAPI = process.env.NEXT_PUBLIC_GRAPHCMS_ENDPOINT;
